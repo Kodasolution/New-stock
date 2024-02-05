@@ -1,0 +1,120 @@
+400pTEBJ]]? 2%%$
+vakixe@mailinator.com
+
+//htaccess
+in public rugamba
+<IfModule mod_rewrite.c>
+
+    <IfModule mod_negotiation.c>
+
+        Options -MultiViews -Indexes
+
+    </IfModule>
+
+
+
+    RewriteEngine On
+
+
+
+    # Handle Authorization Header
+
+    RewriteCond %{HTTP:Authorization} .
+
+    RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+
+
+
+    # Redirect Trailing Slashes If Not A Folder...
+
+    RewriteCond %{REQUEST_FILENAME} !-d
+
+    RewriteCond %{REQUEST_URI} (.+)/$
+
+    RewriteRule ^ %1 [L,R=301]
+
+
+
+    # Send Requests To Front Controller...
+
+    RewriteCond %{REQUEST_FILENAME} !-d
+
+    RewriteCond %{REQUEST_FILENAME} !-f
+
+    RewriteRule ^ index.php [L]
+
+</IfModule>
+
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresDefault "access plus 4 weeks"
+    ExpiresByType text/css "access plus 20 weeks"
+    ExpiresByType text/javascript "access plus 20 weeks"
+    ExpiresByType image/png "access plus 20 weeks"
+    ExpiresByType image/jpg "access plus 20 weeks"
+    ExpiresByType image/jpeg "access plus 20 weeks"    
+    ExpiresByType image/git "access plus 20 weeks"
+    ExpiresByType image/gif "access plus 20 weeks"
+    ExpiresByType image/svg "access plus 20 weeks"
+</IfModule>
+
+<IfModule mod_headers.c>
+    <filesMatch ".(ico|jpg|jpeg|png|gif|svg|woff|woff2|js|css)$">
+        Header set Cache-Control "max-age=604800, public, must-revalidate"
+    </filesMatch>
+</IfModule>
+
+
+//out in public_html
+
+RewriteCond %{REQUEST_URI} !^public
+
+RewriteRule ^(.*)$ public/$1 [L]
+
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresDefault "access plus 4 weeks"
+    ExpiresByType text/css "access plus 20 weeks"
+    ExpiresByType text/javascript "access plus 20 weeks"
+    ExpiresByType image/png "access plus 20 weeks"
+    ExpiresByType image/jpg "access plus 20 weeks"
+    ExpiresByType image/jpeg "access plus 20 weeks"    
+    ExpiresByType image/git "access plus 20 weeks"
+    ExpiresByType image/gif "access plus 20 weeks"
+    ExpiresByType image/svg "access plus 20 weeks"
+</IfModule>
+<IfModule mod_headers.c>
+    <filesMatch ".(ico|jpg|jpeg|png|gif|svg|woff|woff2|js|css)$">
+        Header set Cache-Control "max-age=604800, public, must-revalidate"
+    </filesMatch>
+</IfModule>
+
+# BEGIN cPanel-generated php ini directives, do not edit
+# Manual editing of this file may result in unexpected behavior.
+# To make changes to this file, use the cPanel MultiPHP INI Editor (Home >> Software >> MultiPHP INI Editor)
+# For more information, read our documentation (https://go.cpanel.net/EA4ModifyINI)
+<IfModule php8_module>
+   php_flag display_errors On
+   php_value max_execution_time 30
+   php_value max_input_time 60
+   php_value max_input_vars 1000
+   php_value memory_limit 4096M
+   php_value post_max_size 128M
+   php_value session.gc_maxlifetime 1440
+   php_value session.save_path "/var/cpanel/php/sessions/ea-php81"
+   php_value upload_max_filesize 2M
+   php_flag zlib.output_compression Off
+</IfModule>
+<IfModule lsapi_module>
+   php_flag display_errors On
+   php_value max_execution_time 30
+   php_value max_input_time 60
+   php_value max_input_vars 1000
+   php_value memory_limit 4096M
+   php_value post_max_size 128M
+   php_value session.gc_maxlifetime 1440
+   php_value session.save_path "/var/cpanel/php/sessions/ea-php81"
+   php_value upload_max_filesize 2M
+   php_flag zlib.output_compression Off
+</IfModule>
+# END cPanel-generated php ini directives, do not edit

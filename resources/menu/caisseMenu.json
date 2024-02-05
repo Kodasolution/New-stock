@@ -1,0 +1,48 @@
+{
+    "menu": [
+      {
+        "name": "Dépenses",
+        "icon": "menu-icon tf-icons bx bx-money-withdraw",
+        "slug": "expenses",
+        "submenu": [
+          {
+            "url": "admin/expenses",
+            "name": "Dépenses",
+            "slug": "expenses.index"
+          },
+          {
+            "url": "admin/expenses/list",
+            "name": "Dépenses-Ingrédients",
+            "slug": "expenses.list"
+          },
+          {
+            "url": "admin/dette",
+            "name": "Dettes",
+            "slug": "expenses.dette.index"
+          },
+          {
+            "url": "admin/remboursement",
+            "name": "Remboursement",
+            "slug": "expenses.remboursement.index"
+          },
+          {
+            "url": "admin/versement",
+            "name": "Versément-Salaire",
+            "slug": "expenses.versement.index"
+          }
+        ]
+      },
+      {
+        "url": "admin/caisse",
+        "name": "Caisse",
+        "slug": "caisse.index",
+        "icon": "menu-icon tf-icons bx bxs-bank"
+      },
+      {
+        "url": "admin/purchase",
+        "name": "Commandes",
+        "slug": "purchase.index",
+        "icon": "menu-icon tf-icons bx bx-spreadsheet"
+      }
+    ]
+  }

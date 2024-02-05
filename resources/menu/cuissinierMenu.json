@@ -1,0 +1,26 @@
+{
+    "menu": [
+        {
+            "name": "Flux de stock",
+            "icon": "menu-icon tf-icons bx bx-transfer-alt",
+            "slug": "inventory",
+            "submenu": [
+                {
+                    "url": "admin/inventory",
+                    "name": "Entrées",
+                    "slug": "inventory.index"
+                },
+                {
+                    "url": "admin/inventory/sorties",
+                    "name": "Sorties",
+                    "slug": "inventory.sorties"
+                },
+                {
+                    "url": "admin/inventory/return",
+                    "name": "Retour",
+                    "slug": "inventory.return"
+                }
+            ]
+        }
+    ]
+}

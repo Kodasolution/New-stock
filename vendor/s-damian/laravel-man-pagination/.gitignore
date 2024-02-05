@@ -1,0 +1,12 @@
+# Base
+/tests/coverage
+/vendor
+.phpunit.result.cache
+composer.lock
+composer.phar
+
+# For IDE
+/.idea
+/.vscode
+/nbproject
+.phpstorm.meta.php

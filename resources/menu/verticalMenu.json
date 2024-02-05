@@ -1,0 +1,149 @@
+{
+  "menu": [
+    {
+      "url": "hejurucane/",
+      "name": "Dashboards",
+      "icon": "menu-icon tf-icons bx bx-home-circle",
+      "slug": "admin.dashboard"
+    },
+    {
+      "icon": "menu-icon tf-icons bx bx-user",
+      "name": "Settings",
+      "slug": "user",
+      "submenu": [
+        {
+          "url": "hejurucane/user",
+          "name": "Utilisateurs",
+          "slug": "user.index"
+        },
+        {
+          "url": "hejurucane/salaire",
+          "name": "Salaire-employé",
+          "slug": "user.salaire.index"
+        },
+        {
+          "url": "hejurucane/client",
+          "name": "Clients",
+          "slug": "user.client.index"
+        },
+        {
+          "url": "hejurucane/role",
+          "name": "Roles",
+          "slug": "user.role.index"
+        },
+        {
+          "url": "hejurucane/permission",
+          "name": "Permission",
+          "slug": "user.permission.index"
+        },
+        {
+          "url": "hejurucane/module",
+          "name": "Module",
+          "slug": "user.module.index"
+        }
+      ]
+    },
+    {
+      "url": "hejurucane/category",
+      "name": "Catégories",
+      "icon": "menu-icon tf-icons bx bx-grid",
+      "slug": "category.index"
+    },
+    {
+      "name": "Produits",
+      "slug": "product",
+      "icon": "menu-icon tf-icons bx bx-purchase-tag-alt",
+      "submenu":[
+        {
+          "url": "hejurucane/product",
+          "slug":"product.index",
+          "name": "Produits"
+        },
+        {
+          "url": "hejurucane/ingredient",
+          "slug":"product.ingredient.index",
+          "name": "Ingrédients"
+        }
+      ]
+      
+    },
+    {
+      "url": "hejurucane/provider",
+      "name": "Fournisseurs",
+      "slug": "provider.index",
+      "icon": "menu-icon tf-icons bx bx-user-plus"
+    },
+    {
+      "url": "hejurucane/purchase",
+      "name": "Commandes",
+      "slug": "purchase.index",
+      "icon": "menu-icon tf-icons bx bx-spreadsheet"
+    },
+    {
+      "name": "Flux de stock",
+      "icon": "menu-icon tf-icons bx bx-transfer-alt",
+      "slug": "inventory",
+      "submenu": [
+        {
+          "url": "hejurucane/inventory",
+          "name": "Entrées",
+          "slug": "inventory.index"
+        },
+        {
+          "url": "hejurucane/inventory/sorties",
+          "name": "Sorties",
+          "slug": "inventory.sorties"
+        },
+        {
+          "url": "hejurucane/inventory/return",
+          "name": "Retour",
+          "slug": "inventory.return"
+        }
+      ]
+    },
+    {
+      "name": "Dépenses",
+      "icon": "menu-icon tf-icons bx bx-money-withdraw",
+      "slug": "expenses",
+      "submenu": [
+        {
+          "url": "hejurucane/expenses",
+          "name": "Dépenses",
+          "slug": "expenses.index"
+        },
+        {
+          "url": "hejurucane/expenses/list",
+          "name": "Dépenses-Ingrédients",
+          "slug": "expenses.list"
+        },
+        {
+          "url": "hejurucane/dette",
+          "name": "Dettes",
+          "slug": "expenses.dette.index"
+        },
+        {
+          "url": "hejurucane/remboursement",
+          "name": "Remboursement",
+          "slug": "expenses.remboursement.index"
+        },
+        {
+          "url": "hejurucane/versement",
+          "name": "Versément-Salaire",
+          "slug": "expenses.versement.index"
+        }
+      ]
+    },
+    {
+      "url": "hejurucane/caisse",
+      "name": "Caisse",
+      "slug": "caisse.index",
+      "icon": "menu-icon tf-icons bx bxs-bank"
+    },
+    {
+      "url": "hejurucane/rapport",
+      "name": "Rapports",
+      "slug": "rapport.index", 
+      "icon": "menu-icon tf-icons bx bx-line-chart"
+    }
+  ]
+}
